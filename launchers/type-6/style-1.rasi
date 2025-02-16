@@ -24,7 +24,8 @@ configuration {
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "Mitimasu 15";
+    font:                        "Mitimasu 14";
+    // font:                        "Mitimasu 15";
     background:                  #304A81;
     background-alt:              #393684;
     foreground:                  #FFFFFF;
@@ -40,10 +41,11 @@ window {
     location:                    center;
     anchor:                      center;
     fullscreen:                  false;
-    width:                       1400px;
+    // width:                       1400px;
+    width:                       1000px;
     // Neko
-    height:                      650px;
-    // height:                      400px;
+    height:                      530px;
+    // height:                      650px;
     x-offset:                    0px;
     y-offset:                    0px;
 
@@ -71,8 +73,8 @@ imagebox {
     // rain gray
     // background-image:            url("~/Pictures/wall/gray.jpg", height);
     // Neko
-    // background-image:            url("~/Pictures/wall/gray3-min3.png", height);
-    background-image:            url("~/Pictures/wall/timetable.png", width);
+    background-image:            url("~/Pictures/wall/gray3-min3.png", height);
+    // background-image:            url("~/Pictures/wall/timetable.png", width);
     orientation:                 vertical;
     children:                    [ "inputbar", "dummy", "mode-switcher" ];
 }
@@ -137,7 +139,9 @@ button selected {
 /*****----- Listview -----*****/
 listview {
     enabled:                     true;
-    columns:                     2;
+    enabled:                     true;
+    // columns:                     2;
+    columns:                     1;
     lines:                       9;
     cycle:                       true;
     dynamic:                     true;
